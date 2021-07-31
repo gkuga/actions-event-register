@@ -15,5 +15,6 @@ else
         --api-key=$2 \
         --name=$3 \
         --data=$4 \
-        --labels=$5
+        --labels=$5 \
+        $6
 fi

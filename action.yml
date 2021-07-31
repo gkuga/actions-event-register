@@ -21,6 +21,10 @@ inputs:
     description: 'The comma-separated list of labels for the event. Format: key=value,key2=value2'
     required: false
     default: ''
+  options:
+    description: 'The other options of pipectl register command'
+    required: false
+    default: ''
 runs:
   using: 'docker'
   image: 'Dockerfile'
@@ -30,3 +34,4 @@ runs:
     - ${{ inputs.event-name }}
     - ${{ inputs.data }}
     - ${{ inputs.labels }}
+    - ${{ inputs.options }}
